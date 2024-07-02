@@ -1,0 +1,7 @@
+playwright/.auth
+
+__pycache__/
+
+tmp/
+
+.env

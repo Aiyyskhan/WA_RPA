@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+    <div class="box-1">
+        <h1>Welcome to AltanRPA</h1>
+    </div>
+    <div class="box-2" id="status">
+    </div>
+    <div class="box-3">
+        <form action="" onsubmit="sendMessage(event)">
+            <!-- <input type="text" id="messageText" autocomplete="off"/> -->
+            <!-- <textarea id="messageText" cols="40" rows="10"></textarea> -->
+            <textarea id="messageText" rows="15"></textarea>
+            <button>send</button>
+        </form>
+    </div>
+    <div class="box-4">
+        <ul id='messages'>
+        </ul>
+    </div>
+</div>
+{% endblock %}

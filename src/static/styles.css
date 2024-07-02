@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass Mono', monospace;
+    /* font-size: 40px; */
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    align-content: stretch;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    gap: 5px;
+
+    grid-template-rows: 2fr 1fr 6fr minmax(6fr, auto);
+    grid-template-columns: minmax(300px, 50%);
+    
+    justify-content: center;
+    align-content: space-around;
+    
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+[class^="box-"] {
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+.box-1, .box-2 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-1 {
+    padding-block: 20px;
+}
+
+.box-2 {
+    padding-block: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+}
+
+.box-3 {
+    padding-block: 10px;
+}
+.box-3 form {
+    height: 100%;
+    display: grid;
+    row-gap: 5px;
+    align-items: space-between;
+}
+.box-3 textarea {
+    caret-color: #ccc;
+    resize: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* box-shadow: 1px 1px 1px #999; */
+}
+.box-3 button {
+    padding-block: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+}
+
+.box-4 {
+    padding-top: 10px;
+}
+.box-4 ul {
+    padding-left: 20px ;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: grid;
+}
+.box-4>li {
+    padding-block: 5px;
+}
+.box-4>img {
+    padding-block: 10px;
+    justify-self: center;
+}
